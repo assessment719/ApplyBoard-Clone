@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ApplyBoard Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+</head>
+
+<body>
+    <div class="hero-section">
+        <header>
+            <div class="logo">
+                <img src="https://didmdw8v48h5q.cloudfront.net/wp-content/uploads/2021/12/AB_Linear_white_logo.png">
+            </div>
+            <div class="redirecting-link">
+                <ul>
+                    <li>Students</li>
+                    <li>Recruitment Partners</li>
+                    <li>Institutions</li>
+                    <li onclick="togglediscoverylist()">Discover <i class="fa-solid fa-angle-down"></i></li>
+                </ul>
+            </div>
+            <div>
+                <button class="nav-button">Login</button>
+                <button class="nav-button">Register</button>
+            </div>
+        </header>
+        <div class="hero-section-text">
+            Our Mission is to<br>Educate the World
+            <br>
+            <button class="student">I am a student who wants to study abroad</button>
+            <br>
+            <button class="recruiter-institution">I am a recruitment partner</button><button
+                class="recruiter-institution margin">I work at an academic institution</button>
+        </div>
+        <div class="discovery-list" id="discoverylist">
+            <p>Our Solutions</p>
+            <p>Events</p>
+            <p>Knowledge Hub</p>
+            <p>Apply Insights</p>
+            <p>Trends Report 2024</p>
+        </div>
+    </div>
+
+    <div class="about-us">
+        <p>A Platform That Supports You End-to-End</p>
+        <div class="about-us-buttons">
+            <button class="about-us-but" id="but1">STUDENTS</button>
+            <button class="about-us-but" id="but2">RECRUITMENT PARTNERS</button>
+            <button class="about-us-but" id="but3">PARTNER INSTITUTIONS</button>
+        </div>
+        <div class="about-us-details" id="details1" style="display: flex;">
+            <div class="about-us-text">
+                <b>Students</b>
+                <br><br>
+                We believe in your dreams and work hard to make them a reality. Get matched with and apply to programs
+                and institutions that align with your background, skills, and interests.
+                <br><br>
+                <button>Learn More</button>
+            </div>
+            <div class="about-us-images">
+                <img class="aboutimage" src="Student.jpg">
+            </div>
+        </div>
+        <div class="about-us-details" id="details2" style="display: none;">
+            <div class="about-us-text">
+                <b>Recruitment Partners</b>
+                <br><br>
+                ApplyBoard is more than a platform. We're your trusted partner, here to help you do what you do best:
+                guide students around the world to fulfill their international education dreams.
+                <br><br>
+                <button>Learn More</button>
+            </div>
+            <div class="about-us-images">
+                <img class="aboutimage" src="Recruiter.jpg">
+            </div>
+        </div>
+        <div class="about-us-details" id="details3" style="display: none;">
+            <div class="about-us-text">
+                <b>Partner Institutions</b>
+                <br><br>
+                Increase your global presence and the number of qualified student applicants from a single, easy-to-use
+                platform trusted by more than 1,500 institutions worldwide.
+                <br><br>
+                <button>Learn More</button>
+            </div>
+            <div class="about-us-images">
+                <img class="aboutimage" src="Institution.jpg">
+            </div>
+        </div>
+    </div>
+
+    <div class="how-we-help">
+        <p>How We Help</p>
+        <div class="intro-video">
+            <iframe src="https://play.vidyard.com/rZwwNpnt5HWTRqqNmZ62Y9" width="690" height="388" frameborder="0"
+                style="border: none; border-radius: 10px; box-shadow: 0 0 20px black;" allowfullscreen></iframe>
+        </div>
+        <div class="partner-button">
+            <button>Partner With Us</button>
+        </div>
+    </div>
+
+    <div class="easy-platform">
+        <p>An Easy-to-Use Platform Built to Deliver<br>Quality Applications and More</p>
+        <div class="about-us-buttons" id="aboutusbuttons">
+            <button class="about-us-but" id="platformbut1">STUDENTS</button>
+            <button class="about-us-but" id="platformbut2">RECRUITMENT PARTNERS</button>
+        </div>
+        <div class="intro-video" id="studentvideo" style="display: flex;">
+            <iframe src="https://play.vidyard.com/fxNViTpH3owjmejUoxhvUK" width="1000" height="561.3" frameborder="0"
+                style="border: none; border-radius: 10px;" allowfullscreen></iframe>
+        </div>
+        <div class="intro-video" id="recruitervideo" style="display: none;">
+            <iframe src="https://play.vidyard.com/sy7HFyHRiWm23NrE5nrG8P" width="1000" height="561.3" frameborder="0"
+                style="border: none; border-radius: 10px;" allowfullscreen></iframe>
+        </div>
+        <div class="three-supports" id="threesupports" style="margin-left: 40px;">
+            <div class="supports">
+                <img src="Programmes.webp">
+                <p style="margin-left: -7px;">Find Programs<br>Faster</p>
+            </div>
+            <div class="supports">
+                <img src="Support.webp">
+                <p style="margin-left: -20px;">Helpful and<br>Dedicated Support<br>Team</p>
+            </div>
+            <div class="supports">
+                <img src="Scholarship.webp">
+                <p style="margin-left: -20px;">Access to Exclusive<br>Scholarships</p>
+            </div>
+        </div>
+        <div class="partner-button" style="margin-top: 3rem;">
+            <button>Try It Today</button>
+        </div>
+    </div>
+
+    <div class="connect">
+        <iframe
+            src="https://play.vidyard.com/jywqyZ3aTGqD2ry4DTjJ5h.html?disable_popouts=1&v=4.3.15&type=inline&autoplay=1&hidden_controls=1&embed_button=0&viral_sharing=0&loop=1&lazy-src=https%3A%2F%2Fplay.vidyard.com%2FjywqyZ3aTGqD2ry4DTjJ5h.jpg"
+            width="1244.4" height="700" style="padding: 60px;" frameborder="0" allow="autoplay; encrypted-media"
+            allowfullscreen>
+        </iframe>
+    </div>
+
+    <div class="review">
+        <p id="review">What Our Partners Have to Say</p>
+        <div class="about-us-buttons">
+            <button class="about-us-but" id="reviewbut1">STUDENTS</button>
+            <button class="about-us-but" id="reviewbut2">RECRUITMENT PARTNERS</button>
+            <button class="about-us-but" id="reviewbut3">PARTNER INSTITUTIONS</button>
+        </div>
+        <div class="iframe-container">
+            <div class="iframes" id="iframe1">
+                <a data-fancybox href="https://embed-ssl.wistia.com/deliveries/84e8a1f7ca5a595f33fc427fa47e14bcae823736/file.mp4?autoplay=1">
+                    <img src="https://didmdw8v48h5q.cloudfront.net/wp-content/uploads/2021/12/ApplyBoard-Stories-Krupali-Thumbnail-1-e1639674435879.png" alt="Video Thumbnail 1">
+                </a>
+            </div>
+            <div class="iframes" id="iframe2">
+                <a data-fancybox href="https://embed-ssl.wistia.com/deliveries/32b1a6d3f1791cea9fd793de77adeb8407453e2b/file.mp4?autoplay=1">
+                    <img src="https://didmdw8v48h5q.cloudfront.net/wp-content/uploads/2021/12/ApplyBoard-Stories-Darshan-Shah-Thumbnail-1-e1639674464800.png" alt="Video Thumbnail 2">
+                </a>
+            </div>
+            <div class="iframes" id="iframe3">
+                <a data-fancybox href="https://embed-ssl.wistia.com/deliveries/1b5fddfa5dec89a52845d6c36bd9430cfc7ebd50/file.mp4?autoplay=1">
+                    <img src="https://didmdw8v48h5q.cloudfront.net/wp-content/uploads/2021/12/ApplyBoard-Stories-Loyalist-College-Thumbnail-1-e1639674491472.png" alt="Video Thumbnail 3">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="vision" id="vision">
+        <p>We're Passionate About Making Education<br>Accessible for Everyone</p>
+        <div class="visionvideos">
+            <div class="visioncontents">
+                <iframe
+                    src="https://play.vidyard.com/fsvfCZKC4LaqPH5UWSs7k6?disable_popouts=1&v=4.3.15&type=inline&preload=none&lazy-src=https%3A%2F%2Fplay.vidyard.com%2FfsvfCZKC4LaqPH5UWSs7k6.jpg"
+                    width="500" height="265" frameborder="0"
+                    style="border: none; border-radius: 10px; box-shadow: 0 0 20px black; margin-left: 60px;"
+                    allowfullscreen></iframe>
+                <br>
+                ApplyBoard believes that education should be accessible to all. We delivered 1,000 backpacks and school
+                supplies to empower children in India to dream big and work hard to achieve their dreams.
+            </div>
+            <div class="visioncontents">
+                <iframe
+                    src="https://play.vidyard.com/NSHp2tbh44CgtwN2z8Ff6g?disable_popouts=1&v=4.3.15&type=inline&preload=none&lazy-src=https%3A%2F%2Fplay.vidyard.com%2FNSHp2tbh44CgtwN2z8Ff6g.jpg"
+                    width="500" height="265" frameborder="0"
+                    style="border: none; border-radius: 10px; box-shadow: 0 0 20px black; margin-left: 42px; transform: scale(1.01);"
+                    allowfullscreen></iframe>
+                <br>
+                The STEM for Change Scholarship seeks to drive diversity and inclusion by empowering women worldwide to
+                pursue an education in STEM. See how we surprised the 2021 recipients.
+            </div>
+        </div>
+        <div class="partner-button" style="margin-top: 3rem;">
+            <button style="width: 120px;">Our Story</button>
+        </div>
+    </div>
+
+    <div class="articles">
+        <p>We Support the Entire Sector with Student<br>Guidance and Thought Leadership</p>
+        <div class="three-articles">
+            <div class="article">
+                <div class="article-img">
+                    <img src="article1.jpg">
+                </div>
+                <p>London Keeps Its Crown as the World’s Best Student City<br><br>June 25, 2024</p>
+                <a>Read More <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="article">
+                <div class="article-img">
+                    <img src="article2.png">
+                </div>
+                <p>How Many International Students Study in the United States?<br><br>June 25, 2024</p>
+                <a>Read More <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="article">
+                <div class="article-img">
+                    <img src="article3.jpg">
+                </div>
+                <p>5 Great Postgraduate Programs in Canada<br><br>June 20, 2024</p>
+                <a>Read More <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="starts">
+        <p class="heading">Get Started with ApplyBoard</p>
+        <div class="three-starts">
+            <div class="start">
+                <img src="Start_img1.webp">
+                <p class="content"><b>Students</b><br><br>Are you a student looking to study abroad in Canada, the
+                    United States, the United Kingdom, Australia, or Ireland? Let our team of experts guide you through
+                    your journey.</p>
+                <div class="partner-button" style="margin-top: 3rem;">
+                    <button style="width: 200px;">Student Reristration</button>
+                </div>
+            </div>
+            <div class="start">
+                <img src="Start_img2.webp">
+                <p class="content"><b>Partner Institutions</b><br><br>Become an ApplyBoard partner institution to
+                    diversify your campus by attracting qualified students from around the world. Connect with our
+                    Partner Relations team here.</p>
+                <div class="partner-button" style="margin-top: 3rem;">
+                    <button style="width: 160px;">Partner Inquiry</button>
+                </div>
+            </div>
+            <div class="start">
+                <img src="Start_img3.webp">
+                <p class="content"><b>Recruitment Partners</b><br><br>Do you recruit prospective students who want to
+                    study in Canada, the United States, the United Kingdom, Australia, or Ireland? Become an ApplyBoard
+                    recruitment partner.</p>
+                <div class="partner-button" style="margin-top: 3rem;">
+                    <button style="width: 210px;">Recruiter Registration</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="alllinks">
+            <img src="https://didmdw8v48h5q.cloudfront.net/wp-content/uploads/2021/12/AB_Linear_white_logo.png">
+            <p>101 Frederick St,<br>
+                Kitchener, ON<br>
+                N2H 6R3</p>
+            <b style="margin: 30px 0;">Get Social</b>
+            <div class="socialmedia" style="margin-left: -9px;">
+                <i class="fa-brands fa-linkedin-in"></i>
+                <i class="fa-brands fa-facebook-f" style="padding-right: 6.5px;"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-tiktok"></i>
+                <i class="fa-brands fa-youtube" style="padding-left: 8.8px; padding-right: 11px;"></i>
+            </div>
+        </div>
+        <div class="alllinks">
+            <b class="hyperlinks" style="margin-top: 40px;">Students</b>
+            <b class="hyperlinks">Institutions</b>
+            <b class="hyperlinks">Recruiters</b>
+            <b>Explore</b>
+            <a>Explore Schools and Programs</a>
+            <a>Register</a>
+        </div>
+        <div class="alllinks">
+            <b style="margin-top: 40px;">Discover</b>
+            <a>Our Story</a>
+            <a>Careers</a>
+            <a>Knowledge Hub</a>
+            <a>Press</a>
+            <a>Life at ApplyBoard</a>
+            <a>Leadership</a>
+            <a>Contact</a>
+        </div>
+        <div class="alllinks">
+            <b style="margin-top: 40px;">Resources</b>
+            <a>UK Resources</a>
+            <a>AU Resources</a>
+            <b style="margin-top: 30px;">Legal</b>
+            <a>Privacy & Cookies Policy</a>
+            <a>Terms & Conditions</a>
+            <a>Accessibility</a>
+            <a>Modern Slavery Statement</a>
+            <a>ApplyBoard Fees</a>
+        </div>
+    </footer>
+    <div class="end">
+        <p>&copy; 2024 ApplyBoard Inc</p>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <script>
+        const discoverylist = document.getElementById('discoverylist');
+        const but1 = document.getElementById('but1');
+        const but2 = document.getElementById('but2');
+        const but3 = document.getElementById('but3');
+        const details1 = document.getElementById('details1');
+        const details2 = document.getElementById('details2');
+        const details3 = document.getElementById('details3');
+        const platformbut1 = document.getElementById('platformbut1');
+        const platformbut2 = document.getElementById('platformbut2');
+        const studentvideo = document.getElementById('studentvideo');
+        const recruitervideo = document.getElementById('recruitervideo');
+        const reviewbut1 = document.getElementById('reviewbut1');
+        const reviewbut2 = document.getElementById('reviewbut2');
+        const reviewbut3 = document.getElementById('reviewbut3');
+
+        function togglediscoverylist() {
+            discoverylist.style.display = discoverylist.style.display === 'none' ? 'flex' : 'none';
+        }
+
+        but1.addEventListener('click', function () {
+            but1.classList.add('active');
+            but2.classList.remove('active');
+            but3.classList.remove('active');
+            details1.style.display = 'flex';
+            details2.style.display = 'none';
+            details3.style.display = 'none';
+        });
+
+        but2.addEventListener('click', function () {
+            but1.classList.remove('active');
+            but2.classList.add('active');
+            but3.classList.remove('active');
+            details1.style.display = 'none';
+            details2.style.display = 'flex';
+            details3.style.display = 'none';
+        });
+
+        but3.addEventListener('click', function () {
+            but1.classList.remove('active');
+            but2.classList.remove('active');
+            but3.classList.add('active');
+            details1.style.display = 'none';
+            details2.style.display = 'none';
+            details3.style.display = 'flex';
+        });
+
+        platformbut1.addEventListener('click', function () {
+            platformbut1.classList.add('active');
+            platformbut2.classList.remove('active');
+            studentvideo.style.display = 'flex';
+            recruitervideo.style.display = 'none';
+        });
+
+        platformbut2.addEventListener('click', function () {
+            platformbut1.classList.remove('active');
+            platformbut2.classList.add('active');
+            studentvideo.style.display = 'none';
+            recruitervideo.style.display = 'flex';
+        });
+
+        reviewbut1.addEventListener('click', function () {
+            reviewbut1.classList.add('active');
+            reviewbut2.classList.remove('active');
+            reviewbut3.classList.remove('active');
+            showIframe(1);
+        });
+
+        reviewbut2.addEventListener('click', function () {
+            reviewbut1.classList.remove('active');
+            reviewbut2.classList.add('active');
+            reviewbut3.classList.remove('active');
+            showIframe(2);
+        });
+
+        reviewbut3.addEventListener('click', function () {
+            reviewbut1.classList.remove('active');
+            reviewbut2.classList.remove('active');
+            reviewbut3.classList.add('active');
+            showIframe(3);
+        });
+
+        window.onload = function () {
+            but1.classList.add('active');
+            platformbut1.classList.add('active');
+            reviewbut1.classList.add('active');
+        };
+
+        function showIframe(activeIndex) {
+            const iframes = document.querySelectorAll('.iframes');
+            iframes.forEach((iframe, index) => {
+                iframe.classList.remove('center', 'left', 'right');
+                if (index + 1 === activeIndex) {
+                    iframe.classList.add('center');
+                } else if (index + 1 < activeIndex) {
+                    iframe.classList.add('left');
+                } else {
+                    iframe.classList.add('right');
+                }
+            });
+        }
+
+        // Initialize with first iframe active
+        showIframe(1);
+
+        $("[data-fancybox]").fancybox({
+            youtube: {
+                controls: 1,
+                showinfo: 0
+            },
+            vimeo: {
+                color: 'f00'
+            }
+        });
+
+        const threesupports = document.getElementById('threesupports');
+        const aboutusbuttonsSection = document.getElementById('aboutusbuttons');
+
+        const toggleSupportsVisibility = (entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    threesupports.style.transform = 'translateY(40px)';
+                    threesupports.style.opacity = '0';
+                } else {
+                    threesupports.style.transform = 'translateY(0px)';
+                    setTimeout(() => {
+                        threesupports.style.opacity = '1';
+                    }, 0);
+                }
+            });
+        };
+
+        const observer1 = new IntersectionObserver(toggleSupportsVisibility, {
+            threshold: 0.1
+        });
+
+        observer1.observe(aboutusbuttonsSection);
+
+        const vision = document.getElementById('vision');
+        const reviewSection = document.getElementById('review');
+
+        const toggleVisionVisibility = (entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    vision.style.transform = 'translateY(100px)';
+                    vision.style.opacity = '0';
+                } else {
+                    vision.style.transform = 'translateY(0px)';
+                    setTimeout(() => {
+                        vision.style.opacity = '1';
+                    }, 0);
+                }
+            });
+        };
+
+        const observer2 = new IntersectionObserver(toggleVisionVisibility, {
+            threshold: 0.1
+        });
+
+        observer2.observe(reviewSection);
+    </script>
+</body>
+
+</html>
