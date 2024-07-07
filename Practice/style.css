@@ -328,8 +328,17 @@ header {
 .connect {
     display: flex;
     justify-content: center;
+    align-items: center;
     background-color: #f2f7fe;
     margin: 50px 0;
+    padding: 60px;
+}
+
+.connect iframe {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
 }
 
 .review {
