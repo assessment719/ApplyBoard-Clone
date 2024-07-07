@@ -458,7 +458,7 @@ header {
     transition: transform 2s ease, opacity 2s ease;
 }
 
-.vision p {
+.heading {
     margin-top: 2rem;
     text-align: center;
     font-size: 3rem;
@@ -477,6 +477,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     text-align: center;
     font-size: 1.2rem;
     line-height: 1.6;
