@@ -316,7 +316,6 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
     <script>
-        const discoverylist = document.getElementById('discoverylist');
         const but1 = document.getElementById('but1');
         const but2 = document.getElementById('but2');
         const but3 = document.getElementById('but3');
@@ -330,10 +329,6 @@
         const reviewbut1 = document.getElementById('reviewbut1');
         const reviewbut2 = document.getElementById('reviewbut2');
         const reviewbut3 = document.getElementById('reviewbut3');
-
-        function togglediscoverylist() {
-            discoverylist.style.display = discoverylist.style.display === 'none' ? 'flex' : 'none';
-        }
 
         but1.addEventListener('click', function () {
             but1.classList.add('active');
