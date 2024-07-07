@@ -332,16 +332,6 @@ header {
     margin: 50px 0;
 }
 
-.connect div {
-    overflow: hidden;
-    border: none;
-    margin: 60px;
-}
-
-.connect iframe {
-    transform: scale(1.1);
-}
-
 .review {
     display: flex;
     flex-direction: column;
