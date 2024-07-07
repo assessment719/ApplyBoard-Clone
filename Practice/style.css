@@ -16,7 +16,7 @@
 header {
     position: fixed;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     z-index: 10;
     height: 90px;
@@ -24,6 +24,8 @@ header {
     font-weight: bold;
     font-size: 1.1rem;
     background-image: linear-gradient(rgba(87, 87, 205, 0.872), rgba(255, 255, 255, 0.073));
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 
 .logo img {
@@ -43,6 +45,7 @@ header {
     margin-left: 60px;
     color: white;
     border-bottom: 4px solid transparent;
+    position: relative;
 }
 
 .redirecting-link ul li:hover {
@@ -67,6 +70,36 @@ header {
 .nav-button:hover {
     background-color: white;
     color: #0064E1;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    color: #427dc5;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border: none;
+    border-radius: 5px;
+}
+
+.dropdown p {
+    padding: 10px;
+    font-weight: normal;
+    font-size: 1;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.dropdown p:hover {
+    background-color: #4483cf0f;
+}
+
+.redirecting-link ul li:hover .dropdown {
+    display: block;
 }
 
 .hero-section-text {
@@ -112,29 +145,6 @@ header {
 
 .margin {
     margin-left: 20px;
-}
-
-.discovery-list {
-    position: absolute;
-    position: fixed;
-    display: none;
-    flex-direction: column;
-    background-color: white;
-    color: #427dc5;
-    z-index: 10;
-    top: 10%;
-    left: 64.4%;
-    border: none;
-    border-radius: 5px;
-}
-
-.discovery-list p {
-    padding: 10px;
-    cursor: pointer;
-}
-
-.discovery-list p:hover {
-    background-color: #558bcc0f;
 }
 
 .about-us {
