@@ -301,6 +301,20 @@ header {
     font-weight: bold;
 }
 
+.easy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+}
+
+.easy iframe {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+}
+
 .three-supports {
     display: flex;
     justify-content: center;
